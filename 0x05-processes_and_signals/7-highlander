@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#this process wouldn't kill
+trap "echo 'I am invincible!!!'"  SIGTERM
+
+
+# print the message forever
+while true;
+do
+	echo "To infinity and beyond";
+	sleep 2
+done
