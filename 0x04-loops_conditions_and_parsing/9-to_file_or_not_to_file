@@ -1,12 +1,16 @@
 #!/usr/bin/env bash
 #check file status
-if (( -e "$school" )); then
+file="school"
+if [ -e "$file" ]; then
 	echo "school file exists"
-	if (( -s "$school" )); then
+	if [ -s "$file" ]; then
 		echo "school file is empty"
 	else
 		echo "school file is not empty"
-	if (( -f "$school" )); then
+	fi
+	if [ -f "$file" ]; then
 		echo "school is a regular file"
+	fi
 else
 	echo "school file does not exist"
+fi
