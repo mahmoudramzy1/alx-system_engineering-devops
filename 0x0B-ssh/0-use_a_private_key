@@ -1,0 +1,3 @@
+#connect to server with ssh
+
+ssh -i ~/.ssh/school ubuntu@100.25.0.114
