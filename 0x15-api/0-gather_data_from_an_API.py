@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""using api"""
-
+"""api module."""
 import requests
 import sys
+
 
 complete = 0
 count = 0
