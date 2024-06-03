@@ -22,7 +22,7 @@ if __name__ == "__main__":
         count += 1
         if todo['completed'] is True:
             complete += 1
-    print("Employee {} is done with tasks({}/{})".format(
+    print("Employee {} is done with tasks({}/{}):".format(
         users['name'], complete, count))
 
     if todos is not None:
