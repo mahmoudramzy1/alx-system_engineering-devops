@@ -23,8 +23,8 @@ if __name__ == "__main__":
 
     for task in todos:
         taskdict = {"task": task.get("title"),
-                "completed": task.get("completed"),
-                "username": name}
+                    "completed": task.get("completed"),
+                    "username": name}
         todotask.append(taskdict)
     todouser[user_id] = todotask
 
