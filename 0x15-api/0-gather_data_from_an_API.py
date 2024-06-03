@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""api module."""
+"""Api module using requests."""
 import requests
 import sys
 
