@@ -20,7 +20,8 @@ if __name__ == "__main__":
     todos = todosresponse.json()
 
     with open(filename, mode='w') as f:
-        writer = csv.writer(f)
-        for row in todos:
-            formated = [user_id,name,row["completed"],row["title"]]
-            writer.writerow(['"' + str(item) + '"' for item in formated])
+        writer = csv.writer(f, delimiter=',', quotechar='"',
+                            quoting=csv.QUOTE_ALL, lineterminator='\n')
+        for task in todos:
+                writer.writerow([user_id, name, str(task.get('completed')),
+                                 task.get('title')])
