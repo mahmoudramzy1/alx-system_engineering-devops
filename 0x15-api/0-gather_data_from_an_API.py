@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Api module using requests."""
+"""For a given employee ID, returns information about
+their TODO list progress"""
+
 import requests
 import sys
 
